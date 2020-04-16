@@ -1,0 +1,14 @@
+Distance of 0 has 0 results
+Distance of 1 has 3115 results
+Distance of 2 has 1195 results
+Distance of 3 has 159 results
+Distance of 4 has 33 results
+Distance of 5 has 9 results
+Distance of 6 has 4 results
+Distance of 7 has 1 results
+Distance of 8 has 1 results
+Distance of 9 has 0 results
+Distance of 10 has 0 results
+Distance of 11 has 1 results
+Results with max distance:
+	unconfortability,discomfort
