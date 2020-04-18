@@ -4,3 +4,4 @@ java/build
 *.class
 *.zip
 *.rar
+*.DS_Store
