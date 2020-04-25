@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
+// using assn1;
 
 namespace assn12
 {
@@ -27,7 +28,7 @@ namespace assn12
             Console.WriteLine("Hello World!");
             var stopwatch = new Stopwatch();
             stopwatch.Start();
-            nim_win(5);
+            Assn1.nim_win(5);
             stopwatch.Stop();
             var elapsed_time = stopwatch.Elapsed;
             Console.WriteLine("elapsed time: {0}", elapsed_time);
