@@ -23,5 +23,32 @@ namespace assn12
                    Math.Min(MED(i,j-1,A,B) + 1, 
                             MED(i-1,j-1,A,B) + myInt));
         }
+        
+        public static int dpMED(int i, int j, String A, String B)
+        {
+            int[,] results = new int[i+1, j+1];
+            for(int x  = 0; x <= i;x++)
+            {
+                for(int y = 0; y <= j; y++)
+                {
+                    if(x == 0)
+                    {
+                        results[x, y]= y;
+                    }
+                    else if(y == 0)
+                    {
+                    results[x, y]=  x;
+                    }
+                    else
+                    {
+                    int myInt = A[x] == B[y] ? 0 : 1;
+                    results[x, y]=  Math.Min(results[x-1, y]+ 1, 
+                                    Math.Min(results[x, y-1] + 1, 
+                                            results[x-1, y-1] + myInt));
+                    }
+                }
+            }
+            return results[i, j];
+        }
     }
 }
