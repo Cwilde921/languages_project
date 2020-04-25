@@ -27,8 +27,15 @@ namespace assn12
         {
             Console.WriteLine("Hello World!");
             var stopwatch = new Stopwatch();
+
+            String a = "abcdefghk";
+            String b = "abcdefghijk";
+            int al = a.Length;
+            int bl = b.Length;
+            Console.WriteLine("\nFirst string:  {0}\nSecond string: {1}", a, b);
+
             stopwatch.Start();
-            Assn1.nim_win(5);
+            Console.WriteLine("Minimum edit distance: {0}", Assn3.MED(al-1, bl-1, a, b));
             stopwatch.Stop();
             var elapsed_time = stopwatch.Elapsed;
             Console.WriteLine("elapsed time: {0}", elapsed_time);
